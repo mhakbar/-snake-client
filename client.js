@@ -10,6 +10,7 @@ const connect = function () {
   
   conn.on("connect", () => {
     console.log("connection successful");// code that does something when the connection is first established
+    conn.write('Name: MHA');
   });
 
   conn.on('data', (data) => {
