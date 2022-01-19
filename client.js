@@ -11,7 +11,26 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("connection successful");// code that does something when the connection is first established
     conn.write('Name: MHA');
-  });
+    
+  //   setTimeout(() => {
+  //     conn.write('Move: up');
+
+  //   }, 50);
+
+  //   setTimeout(() => {
+  //     conn.write('Move: up');
+
+  //   }, 100);
+
+  //   setTimeout(() => {
+  //     conn.write('Move: up');
+
+  //   }, 150);
+
+  //   setInterval(() => {
+  //     conn.write('Move: up');
+  //   }, 50);
+  // });
 
   conn.on('data', (data) => {
     console.log(data.toString());
