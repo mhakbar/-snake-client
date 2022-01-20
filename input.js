@@ -33,6 +33,13 @@ const handleUserInput = function (data) {
 } else if (data === 'd') {
   //console.log('Move: right');
   connection.write('Move: right');
+} else if (data === "i") {
+  connection.write("Say: Yo");
+  
+} else if (data === "o") {
+  connection.write("Say: Hi");
+} else if (data === "p") {
+  connection.write("Say: What's UP");
 }
 };
 
