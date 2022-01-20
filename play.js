@@ -13,8 +13,8 @@ const setupInput = require(".//input");//importing setupInput function from inpu
 
 
 console.log("Connecting ...");
-connect();
-setupInput();
+//connect();
+setupInput(connect());
 
 
 
